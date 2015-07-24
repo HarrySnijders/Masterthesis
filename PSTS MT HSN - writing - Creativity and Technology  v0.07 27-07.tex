@@ -1,0 +1,836 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+%\documentclass[a4paper]{report}
+\documentclass[a4paper]{Thesis}
+% for report \usepackage{suthesis-2e}
+\usepackage[colorlinks,citecolor=black]{hyperref}
+\usepackage{apacite}
+\usepackage[english]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{subfig}
+\usepackage{verbatim}
+%ToDoNotes
+\usepackage{todonotes}
+%\usepackage{cancel}
+\usepackage{soul}
+
+\usepackage{vhistory}
+\begin{document}
+	% Start of the revision history table
+	\begin{versionhistory}
+		\vhEntry{0.05}{20.07.2015}{HSn}{created, Structure and Introduction}
+		\vhEntry{0.06}{27.07.2015}{HSn}{Comment on introduction from SSn and Rdb}
+	\end{versionhistory}
+
+\begin{document}
+	
+\begin{titlepage} 
+\begin{center}
+		
+% Upper part of the page. The '~' is needed because \\ % only works if a paragraph has started. \includegraphics[width=0.15\textwidth]{./logo}~\\[1cm]
+		
+%\textsc{\Large Creativity and ICT technology}\\[1.5cm]
+		
+%\textsc{\Large Final year project}\\[0.5cm]
+		
+% Title 
+\HRule \\[0.4cm] { \huge \bfseries Creativity and ICT \\[0.4cm] }
+\HRule \\[0.4cm] { \large \bfseries A process philosophical view on the influence of ICT on technological ideation \\[0.4cm] }
+\HRule \\[0.4cm] { \large \emph{Author:} Harry Snijders \\[0.4cm] }
+
+\vfill		
+% Author and supervisor 
+%\noindent 
+\begin{minipage}[b]{\textwidth} 
+	\begin{flushleft} 
+		\large Thesis for the degree of Master of Science \\[0.4cm]
+
+\begin{tabular}{ll}
+	
+		\large \emph{Studentnumber:}	 & S1143972	\\
+		\large \emph{Place:} 			 & Oldenzaal	\\
+		\large \emph{Date:} 			 & \today \\
+		\large \emph{Institution:} 		 & University of Twente \\
+		\large \emph{Department:} 		 & Department of Philosophy  \\
+		\large \emph{Programme:} 		 & Philosophy of Science, Technology and Society \\
+		\large \emph{Specialization:} 	 & Technology and the Human Being \\
+		\large \emph{First supervisors:} & Dr. Johnny Hartz Søraker and Dr. Aimee van Wynsberghe \\
+		\large \emph{Second supervisor:} & Prof. Dr. Philip Brey \\
+\end{tabular} 		
+
+	\end{flushleft} 
+\end{minipage}
+		
+\end{center} \end{titlepage}
+%content 
+\bigskip
+\bigskip
+\tableofcontents
+%\listoffigures
+
+%PREFACE AND ACKNOWLEDGEMENT
+
+%\begin{abstract}
+%\end{abstract}
+%\bigskip
+%\bigskip
+
+%\providecommand{\keywords}[1]{\textbf{\textit{keywords---}} #1}
+%\keywords{}
+
+%\bigskip
+
+%\begin{flushright} 
+% But in the real world it is more important that a proposition be interesting than that it be true.
+% (A.N. Whitehead)
+%\end{flushright} 
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{Introduction}
+
+Versie 27-juli-2015.\\
+
+
+
+De \textit{provisional section} is een hulp tijdens het schrijven. Daar begint het eigenlijke hoofdstuk. Voor deze sectie staan algemene opmerkingen en ideen voor het hoodstuk.\\
+
+
+Ik maak gebruk van het TODO pakket van latex om herinneringen toe te voegen voor mijzelfdie me te binnen schieten tijdens schrijven bijvoorbeeld.\\
+
+
+Deze week heb ik de introductie in pp gelezen van Rescher en een artikel van Cloots over de vraag naar het ultime. Vervolgens heb ik de structuur van de thesis nog eens goed bekeken en ben overgestapt op een draft versie waar allelei in staat ook samenvattingen, en een writing versie die de uiteindelijke thesis moet worden.
+
+En toen eindelijk maar aan het schrijven. Ik heb er toch voor gekozen om met de introductie te beginnen om nog eens scherp te krijgen wat ik nou eigenlijk aan het onerzoeken ben. Ik verwacht dat ik aan de verschillende secties in dit hoofdstuk delen ga toevoegen als ik met de verschillende subvragen bezig ga.
+Voor maandag is alleen de introduction van belang. Het is een eerste draft, ik ben vooral benieuwd naar of je mijn redenering kunt volgen en overtuigend vindt waar dat van toepassing is, of er iets mist en of ik structurele taalfouten maak.\\
+
+%A fundamental difference between a natural science like physics and an artificial science such as computer science relates to the age old philosophical distinction between is and ought.
+%Natural science onderzoekt wat er is, computer science onderzoekt hoe het zou moeten. Misschien is ditte gebruiken.
+
+Working definition:
+Creativity is the production of novelty with a structure that did not exist before.
+All existing entities in reality have a structure, whether it is a idea or an artifact.
+
+\todo{SSn 22-7
+Je engels niet slecht, maar je gebruikt teveel spreektaal en letterlijke vertalingen van het nederlands. Verder is het niet geheel duidelijk van de introduction waarom ik als lezer geinteresseerd moet zijn in je studie en hoe jouw studie in de literatuur past en waarom jij dit wilt onderzoeken. Een paar details:
+}
+\section{NEW The importance of creativity}
+Steven Shaviro
+p72 73
+What is the meaning, and what is the import, of our belief in creativity
+today?
+How does the new enter into the world? 
+And how does the valuation
+of the new enter into thought? 
+
+Deleuze explicitly invokes Nietzsche’s call for a
+“revaluation of all values,” and for the continual “creation of new values”
+(Deleuze 1994, 136). And Whitehead and Deleuze alike are inspired by
+Bergson’s insistence that “life . . . is invention, is unceasing creation” (Bergson
+2005, 27). But the real turning point comes a century before Bergson and
+Nietzsche, in Kant’s “Copernican revolution” in philosophy. Kant himself
+does not explicitly value the new, but he makes such a valuation (or revaluation)
+thinkable for the first time. He does this by shifting the focus of philosophy
+from questions of essence (“what is it?”) to questions of manner (“how
+is it possible?”).1 Kant rejects the quest for an absolute determination of being:
+this is an unfulfillable, and indeed a meaningless, task. Instead, he seeks
+to define the necessary conditions—or what today we would call the structural
+presuppositions—for the existence of whatever there is, in all its variety
+and mutability. That is to say, Kant warns us that we cannot think beyond the
+conditions, or limits of thought, that he establishes. But he also tells us that,
+once these conditions are given, the contents of appearance cannot be further
+prescribed. The ways in which things appear are limited, but appearances
+themselves are not. They cannot be known in advance, but must be encountered
+in the course of experience. This means that experience is always able to
+surprise us. Our categories are never definitive or all-inclusive. Kant’s argument
+against metaphysical dogmatism, which both Whitehead and Deleuze
+endorse, entails that being always remains open. “The whole is neither given
+nor giveable . . . because it is the Open, and because its nature is to change
+constantly, or to give rise to something new, in short, to endure” (Deleuze
+1986, 9). “Creative advance into novelty” (Whitehead 1929/1978, 222) is always
+possible, always about to happen.
+
+
+
+\section{Provisional section head}
+\todo{waar mogelijk nog referenties toevoegen}
+\todo{toevoegen een verwijzing dat creativiteit in filosofie een ondergeschoven kindje is terwijl de psychology het belang sinds 1950 de komst van J.P. Guilford als voorzitter van de APA}
+
+
+(Grotendeels overgenomen van het proposal)\\
+
+Our society is saturated with all kinds of technological objects that shape our every day lives in many ways. With modern ICT artifacts like smartphones and computers we stay in contact with other people in quite different ways then our ancestors did without these artifacts.  But artifacts, like smartphones and computers, are more then just tools for communication, they influence our perception of the world and influence our behaviour \cite{Verbeek2005,verbeek2011moralizing}. Artifacts are not neutral technological objects that function only as a tool to serve an end.
+
+\todo{-- introduction; provisional section
+	*sprong van cultuur naar humans naar creativity is te simplistisch en niet genoed justified, en leuk dat 'I see it' maar niet genoeg onderbouwd met bewijs van de literatuur.
+	* moet er ook niet een doel en plan in de provisional section?
+	*ik denk dat je een provisional section globaal moet houden dus niet te veel kleine dingetjes gaan beschrijven dan wordt deze section te chaotiech en moeilijk te volgen.
+}
+In the past, technology pessimist thought that the development of society and culture followed the development of technology and therefore technological development was hard or impossible to influence. 
+But contemporary scholars argue that technological development did not follow a straight path as the most efficient way to the end it was designed for. Technological development, they argued, was depending on social and cultural factors \cite{Bijker1989}.
+
+If technology development is depending on social and cultural factors and therefore on humans (individual, as a group or as an society al large) then humans are able to steer the development of technology and are responsible for the effects of the technological on themselves and the environment. \todo{bron vermelding krijg ik van Rdb} Therefore it becomes important to understand the powers at work in he development process and possibilities to control or at least influence this process.  
+No matter how important social and cultural factors are, at the end, for the idea of new technologies, or the design  of new artifacts, creativity is needed because in the way I see it, creativity is lies at the hart of the technological novelty.
+
+Creativity is a word used for description of many different concepts in the domain of novelty but there are some characteristics most scholars in the field degree on that is that creativity is related to the generation of ideas or artifacts that are both original and valuable. With original is meant that the novelty produced did not exist in a similar way in the world before. A newer version of a smartphone with minor changes will not be considered very original. The first smartphones however could be seen as an original new artifact. 
+The value of novelty is less obvious. It is often used, Boden does for example, to exclude novelty produced by fools from creative novelty. But what to say about novelty that is used against people? In the case of technology, the artifact produced should have value for its users.
+\todo{hier mist nog wat, misschien verder ingaan op de waarde van novelty, zie ook Berry Gauts, wil ik ook nog wat zeggen over het surprise effect, dat iets nieuws niet voor de hand mag liggen anders is wordt het niet als creatief beschouwd of doe ik dat pas later. Zie o.a. Boden, Fergusson}
+
+%Different models exist representing the creative process, the ones I have seen so far are the computational model \cite{Boden2004} and the psychological GenePlore model \cite{finke1996imagery}.
+
+Creativity is possible on different levels \cite{Ferguson2010}, groups or individuals can be creative. Also different kinds of agents can be creative such as systems, animals or humans (Ibid.). I will however, only consider technology that is made by humans and finds its origin  in human creativity. I will also focus on the creativity of a single human,
+
+\section{Creativity}
+
+\todo{-introduction; creativity * je hebt je keuzes hier niet genoeg justified waarom je focust op creativity en technology en op agent etc.
+*je herhaalt jezelf in de definitie hier.
+*voorbeelden zijn beter als je ze van de literatuure gebruikt ipv zelf verzinnen.
+*ik denk dat je inderdaad moet toespitsen op de software ontwikkeling, omdat mij het gebied van TI algemeen te breed en complex lijkt.}
+
+Creativity is a very wide spread concept and a highly appreciated value. It is used to classify a person or an artifact or an idea.  It is also used to denote the process of creation where novelty is produced. Creativity can be a an experience, a agent might think he is being creative in his practice.
+\todo{bronnen vermelden}
+
+%new and value
+%Scholars have different ideas about what creativity is but most agree that creative ideas and artifacts are those that are new and have a value. Boden differs two types of new. New can be that it either has not existed before in human history, called historical new or it is new to the creative agent, called psychological new \cite{Boden2004}. The value clause is added to exclude random novelty from being considered creative. For example a random sequence of characters might be the first one of its kind but it has no value and is therefore not considered as a creative product.
+
+
+\paragraph{Novelty, agents and ideas}
+\todo{stukje over TA en upstream?}
+% alleen geinteresseerd in nieuwe ideen
+I am interested in the origin of new technology, created by men. Whether the agent that comes up with new technology is considered a creative agent or not seems not to be of great importance. However an agent that is potential seen as creative agent might generate other ideas than an agent that never will be considered creative because the ideas she generates are to smalls steps forward and to much alike other ideas. I will focus on the generation of novelty that has an potential of being considered as creative but will leave the agent out.
+\todo{citeer het artikel over de genius en alledaagse creativiteit om problemen op te lossen}
+
+The outcome of an creative process might be an artifact or an idea. in the case of technology, the production of the artifact is accompanied with extra limitations,  technology has to work to have value.
+ It has, among others, a tool function. 
+\todo{wat is technology eigenlijk en waar dient het voor, is daar iets over te vinden?}
+Software for example has to be designed according strict rules else it will not execute on the hardware it is designed for. An technological artifact is very much depending on its specific environment and the current technological possibilities. 
+Like all artifacts, a technological artifact has to be manufactured and because it is more or less complex this requires a design of some type first.
+\todo{see Dasgupta}
+A design is an answer to an idea, where the idea can be a problem to solve or a new functionality required.
+The environment is often included in the design process. For example in the case software where the hardware it has to run often puts limitations to the software to develop and is therefore included in the design.
+It is very easy to imagine that an idea for a new technology is not yet possible to realize, to make a design and build the artifacs to realize the idea. 
+Like for example he idea of a submarine with crew that is shrunken to a microscopic size and injected into the blood stream of a nearly assassinated diplomat to save his life (IMDB, the fantastic voyage). It was before 1966 that the idea is posed but it still is not possible to shrink objects. 
+Coining the idea was possible, maybe the story is based on earlier ideas about micro objects that could be injected into the body for repair jobs,  but building the technology is not yet possible. 
+
+\todo{moet ik hier nog iets zeggen over kunst en science, omdat veel literatuur die ik gezien heb juist daar over gaat}
+%These roles are much less strict in the domain or art where Many artifacts in the domain of art and literature,
+
+Since I am interested in the origin of new technology and not the realisation of new technology, and the fact that in the domain of technology an artifact is always preceded by an idea and a design to accomplish that idea, I will not have to consider the creation of new artifacts for understanding the origin of new technology but it is sufficient to focus on the genesis of new ideas.
+
+\todo{nog iets over innovatief gebruik van niewe technology en user innovation? Of het verschil tussen innovatie en orginaiteit?}
+
+
+%hoe om te gaan met waarde?
+%twee fasen process, ideeen genereren fase twee ideeen beoordelen.
+\todo{misschien opnemen Creativity SCOC factor. Social Construction of Creativity. Het idee dat of iets als creatief beoordeeld wordt wordt bepaald door de maatschappij
+	}
+
+\paragraph{Novelty and value}
+I have said something about novelty, the agent, artifacts and ideas but what about value? How important is it for the TI that the ideas produced have a value. 
+
+Creativity is related to a value and for deciding if something has a value some kind of judgement is necessary. In order to be valued as an creative action or outcome, the subject of creativity has to be compared to its environment before it can be granted with the predicate creative. It does not matter who performs the valuation, the idea has to be known first before it can be the subject of valuation.This is even the case if the idea does not leave the human brain.
+In fact some psychological theories of creative processes in the brain are based on this two phase principle like the Geneplore model \cite{finke1996imagery} and the BVSR (Blind Variation Reductive Selection) model \cite{simonton2003human}.
+In the GenePlore model novelty is generated in one or more cycles of the following two phases process. In the first phase new ideas are generated and in the second phase these ideas are validated for their usefulness. It is possible te enter a new first phase and generate new ideas based on the outcome of the second phase, these on their turn are validated and so on. 
+BVSR is based on the evolution theory. The first phase exist of generating new ideas based on the blind variation of existing ideas. In the second phase the ideas are validated and selected according their value.
+\todo{wat is het verschil tussen GenPlore en BVRS}
+
+First there is the novelty produced and then this novelty is the subject of a validation process using different criteria to compute its value.
+This can only be accomplished after the idea is posed. It does not to relate to how novelty is created but to how the novelty is appreciated. 
+The outcome of the valuation will be that the novelty is considered being not creative or creative on a sliding scale depending on how different the idea is in the light of already existing ideas.
+\todo{boden surprise? Examples?}
+Im interest lies at the first phase. But again, as I said with the agent, I will focus on the generation of new ideas that have a potential of being merited as creative ideas.
+
+\paragraph{Technological ideation}
+%technological ideation
+Above I showed why my interest lies not at the agent, the artifact and te validation part of creativity. I am first of al interested in the coming into existence of the new idea.  
+Referencing for this focus to creativity might lead to confusion because creativity is for denoting so many different aspects of novelty. I am interested in the very beginning of new technology, the idea for a new technology, and therefore understand creativity as technological ideation (TI). 
+With understanding Technological Ideation I hope to find the source where new technology comes from and what the influence of ICT is on this source.
+Because the common notion related to technological ideation is creativity, I will still use creativity to find a link in existing literature. 
+\todo{In eerste instantie focus ik op de invloed van softare op  TI in het algemeen. Het kan echter nodig blijken om TI toe te spitsen op een beperkerter domein, dan kies ik mogelijk wederom voor software ontwikkeling}
+
+
+\section{An other world view}
+The common world view in the western world is that of a world constructed out of matter an Aristotelian heritage. Matter consist of small, standard, building blocks that last for ever. 
+Creativity, the generation of novelty, conflicts with this idea of endurance and is therefore more difficult to explain in a world that exists of fixed and ever lasting building blocks.
+In a process view of the world, change and creativity is a basic principle. The world is no longer constructed out of matter but consists of processes. Micro processes, related in myriad ways with other micro processes, build up to macro processes, that because of their recurred characteristic construct the world as we experience it. In this world view every thing is explained as a process, also we humans. 
+
+Change is a basic principle in process philosophy. There is not one version of process philosophy, different scholars have different description which contribute to the overall idea of process philosophy.
+On of the goals of process philosophy is to overcome the limitations of the substance paradigm and cause a paradigm view.
+American philosophy turned out as a fertile source for process philosophy with scholars as C.S. Peirce, John Dewey and William James. The best known process philosopher from the 20th century with the most comprehensive description of Process philosophy was A.N. Whitehead. For Whitehead creativity is the absolute principle of existence. It is his process philosophy I like to use for this case.
+\todo{Bergson, Hartshorn}
+\todo{twijfels zijn er ook, zijn atomistisch idee van basis processen staat me wat tegen, liever ga ik uit van het oneindig opdelen  van processen, maar dat zien we verderop in het hoofdstuk over proces philosophie}
+
+\todo{moet hier nog meer bij, bv welke auteurs, dat er verschilende stromingen zijn}
+\todo{misschien refereren naar de presentatie van Mieke Boon over anders kijken. Met PP kijk ik anders dan met de gangbare vaste stof metaphysica}
+
+
+\section{What type of technology}
+\todo{--introduction; what type of technology
+*justification for software choice...persoonlijke ervaringen zijn niet genoeg, je moet hier ook iets van de literatuur bij halen; bv dat er nog niets is gedaan mbt software (uniqueness)}
+Technology is a very broad domain with very different disciplines. 
+I could either research from a top down position the process of technological ideation (TI) or perform the research bottom up.
+Top down means that I do not choose for a specific technology but take the field of technology as a whole. Besides that this could turn a out to be a to big endeavour, I also think that I could oversee details that are important for my case. Therefore I choose a bottom up  approach and choose for limited technological field.
+I choose as a technology ICT and more specific the domain of software. I have two reasons for this choices. First because I am a software engineer of origin which grants me with specific knowledge in the field of software development. Second because software, how it operates with its concept of processes and the products it brings to the fore like for example virtual reality reassembles the world view of process philosophy.
+
+
+\section{Problem statement}
+%-------------------------------------------------------------
+\todo{dit is de, grotendeels oorspronkelijke, omschrijving uit het thesis proposal, deze houd ik al schrijvende aan de verschillende secties bij en gebruik ik tijdens het schrijven als een rode draad. }
+\todo{niet te veel naar kijken, vooral aan het eind bijwerken}
+
+Philosophers are increasingly interested and looking at the relations between humans and technology. 
+In the field of ethicists new technology are assessed for their influence on the environment and their impact on just distribution of goods and fair distribution of the good life,  anthropological philosophers study how humans perceive the world and how humans are shaped both by technology and social philosophers study the influence of the society on technological development.
+There is however remarkable little attention from philosophers what lies at the very hart of new technology, creativity \cite{gaut2010philosophy}. How does a human get her first idea for a new technology, and what than is the impact of technology on her creativity?
+
+A contemporary field of technology where innovations cycles have become very small and new technologies are created at a very high rate is ICT (information and communication technology).
+
+I propose therefore to ask the following question:
+\textit{(Q) What is the impact of ICT software technology on creativity?}
+In order to answer this question we have to understand what human creativity is. 
+
+Therefore I propose following sub questions:
+\textit{(Q1) What is (human) creativity} and  
+\textit{(Q1) What is IT-software} and  
+\textit{(Q1) What is Proess Philosophy} and  
+\todo{aanvullen, dit zijn waarschijlijk de verschillende hoofdstukken}
+
+\section{Conclusion}
+
+\section{Outline of the thesis}
+
+
+
+
+
+
+
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{Process Philosophy (What is process Philosophy)}
+
+\section{Provisional Content}
+\paragraph{What is the problem with the common western philosophical view of reality?}
+\paragraph{What is the process philosophical view of reality}
+\paragraph{Basic Doctrines}
+\paragraph{How does process philosophy help to understand creativity?}
+\paragraph{Conclusion}
+
+\section{Provisional section head}
+
+
+%one of the principles on which a belief or theory is based:
+%It is a tenet of contemporary psychology that an individual's mental health is supported by having good social networks.
+%An idea or theory on which a statement or action is based:
+%[+ that] They had started with the premise that all men are created equal.
+%The research project is based on the premise stated earlier.
+
+
+\paragraph{What is the problem with the common western philosophical view of reality?}
+De wetenschappelijke methode is gabasserd op het paradigma van de matery fysica.
+Rap heeft daar een stuk over geschreven.
+In de materie fysica en afgeleide logica is geen plaats voor feiten die niet op een duidelijke oorzaak gevolg gebasseerd zijn zoals creativiteit en bijvoorbeeld ervaringen of gevoelens.
+Ik denk dat de sociale wetenschappen daar beter op de plaats zijn omdat bv het gedrag van een maatschappij ook niet is te beredeneren op basis van een rechtstreekse relatie oorzaak en gevolg.
+
+
+
+
+
+
+
+Western metaphysics has long been obsessed with describing reality as an assembly of static individuals whose dynamic features are either taken to be mere appearances or ontologically secondary and derivative. 
+
+The common world view in the western world is that of a world constructed out of matter, an Aristotelian heritage. In this metaphisics of substance, entities are constructed out of small, standard, building blocks that last for ever. 
+% Quantum physics problem shows different
+The static existance of the entities is the primairy ontology and the dynamic features of these entities are secondairy and derivate.
+Entities stand on them selves
+
+The scientifical method is tuned for this worldview and the 
+
+Knowledge comes from science
+Scientifical method very fruitfull but fails to describe phenomena like creativity
+Logic, descartes object-subject, see Rapp in ch 5
+labratory, reductionist, isolating and testing, not as a combination (interwined verbeek)
+paradigma, limits seeing
+
+Modern science, by contrast, seem to \cite[chapter 5]{rapp1990whitehad}
+
+
+The static view on the world is reflected in the current scientific method.
+\todo{Friedrich Rapp creativity and modern science}
+fruitfull (oh ja, wat als we anders hadden gekeken? Dat zou betekenen dat we de meest effieciente weg volgen?)
+
+Scientific method, take subject of research in isolation-> taken out of the rich natural environment-> environment should be included in the subject of research because it will influence it behaviour.
+
+Creativity, the generation of novelty, conflicts with this idea of endurance and is therefore more difficult to explain in a world that exists of fixed and ever lasting building blocks.
+\todo{see Freidrich Rapp ch 5 in witeheads metaphysics of creativity about how modern sience is not capable of dealing with principles like creativity because of the scientific method}
+In a process view of the world, change and creativity is a basic principle. The world is no longer constructed out of matter but consists of processes. Micro processes, related in myriad ways with other micro processes, build up to macro processes, that because of their recurred characteristic construct the world as we experience it. In this world view every thing is explained as a process, also we humans. 
+\cite[ch 5]{rapp1990whitehead}
+the atomistic view of a mere mechanical aggregation of parts
+
+\paragraph{ISABELLE STENGERS review by desmet}
+Deleuze holds that
+philosophy is not a perpetual discussion among scholars engaged in contemplation
+and reflection, which aims at an all-encompassing and consensual vision of the world.
+Rather, it is a mode of creative thought, involving a plurality of problem-driven
+conceptual constructions
+\cite{keylist}
+@article{desmet2011thinking,
+	title={Thinking With Whitehead},
+	author={Desmet, Ronny},
+	journal={Process Studies},
+	volume={40},
+	number={1},
+	pages={179--186},
+	year={2011}
+	}
+
+She reveals that she was first incited to think with Whitehead,
+because as a young chemist-cum-philosopher she was troubled by the catastrophic
+indifference of scientists in relation to what they judge to be ‘non-scientific.’ Instead,
+she shared Whitehead’s concern as regards to the bifurcation of nature into a ‘true’
+world of science and an ‘illusory’ world of non-scientific experience. However,
+Thinking with Whitehead is not merely a matter of Stengers’ youthful affinity with
+Whitehead’s work. Stengers claims that today, more than ever, in light of the
+prevalence of scientific reductionism, we may all share Whitehead’s initial concern.
+For Stengers, “Whitehead belongs to our epoch because he asks a question that is
+ours” (12).
+
+In Process and Reality everything is
+“redone” again. The central problem is the problem of becoming, that is, the
+challenge of unifying endurance and originality, tradition and innovation, habit and
+adventure, conformity and autonomy, determinism and self-determination. The
+unifying concept is ‘actual entity’ as that which is causa sui, meaning, that which
+decides, not what its causes are, but how it takes them into account. And the ultimate
+category is ‘creativity,’ the principle that the many become one and are increased by
+one.
+	
+	
+There is no doubt that Thinking with Whitehead exemplifies Deleuze’s dictum that
+“all concepts are connected to problems without which they would have no meaning”
+(What is Philosophy? 16).
+
+
+creativity is coined by Whitehead 
+\cite{steven meyer}
+http://muse.jhu.edu/login?auth=0&type=summary&url=/journals/configurations/v013/13.1meyer.pdf
+24-07
+
+\cite{Ford}
+@book{ford1984emergence,
+	title={The Emergence of Whitehead's Metaphysics, 1925-1929},
+	author={Ford, Lewis S},
+	year={1984},
+	publisher={SUNY Press}
+}
+
+\section{stenger the book}
+@article{stengers2011thinking,
+	title={Thinking with Whitehead: a free and wild creation of concepts},
+	author={Stengers, Isabelle},
+	year={2011}
+	}
+p54
+It is an exhibition of the process of nature that each duration happens
+and passes. The process of nature can also be termed the passage of nature
+(CN, 54 ) .
+Insofar as i t happens and passes, each duration exhibits the passage of
+nature, but no duration provides a pri vi leged testimony with regard to
+this passage. Every Whitehead ian passage is qualified insofa r as it contains
+other durations and is contained in other durations. Thus, the duration of
+the experience of the customs-officer-in-front-of-whom-a-traveler-passes
+could have been broken down into shorter durations
+
+p72
+When Whitehead beca me a metaphysician,
+conscious experience became a creature of passage, which itself has
+become creativity.
+
+ch16
+IN ALL PHILOSOPHICAL THEORY there is an ultimate which is actual
+in virtue of its accidents. It is only then capable of characterization
+through its accidental embodiments, and apart from these
+accidents is devoid of actuality. In the philosophy of organism this ultimate
+is termed "creativity " ( PR, 7 ) .
+
+p256 PR21-22 over creativity and novelty
+" Creativity," "many," "one " are the ultimate notions involved in the
+meaning of the synonymous terms.
+
+%???
+%Accidental
+%Aristotle made a distinction between the essential and accidental properties of a thing. For example, a chair can be made of wood or metal, but this is accidental to its being a chair: that is, it is still a chair regardless of the material from which it is made.[2] To put this in technical terms, an accident is a property which has no necessary connection to the essence of the thing being described.[3][4][5]
+%In modern philosophy, an accident (or accidental property) is the union of two concepts: property and contingency. In relation to the first, an accidental property (Greek symbebekos)[7] is at its most basic level a property. The color "yellow", "high value", "Atomic Number 79" are all properties, and are therefore candidates for being accidental. On the other hand, "gold", "platinum", and "electrum" are not properties, and are therefore not classified as accidents.
+%
+%There are two opposed philosophical positions that also impact the meaning of this term:
+%Anti-Essentialism (associated with Willard Van Orman Quine) argues that there are no essential properties at all, and therefore every property is an accident.
+%Modal Necessitarianism (associated with Saul Kripke), argues for the veracity of the modal system "Triv" (If P is true, then P must be true). The consequence of this theory is that all properties are essential (and no property is an accident).
+
+
+%proposition
+%Rhetoric. a statement of the subject of an argument or a discourse, or of the course of action or essential idea to be advocated.
+%Logic. a statement in which something is affirmed or denied, so that it can therefore be significantly characterized as either true or false.
+these oppositions and this alignment are instrumental in emphasizing that it is
+more important for Whitehead in Process and Reality that a proposition elicits
+interest, and entails a future-oriented creation of novelty, than that it be true.
+For
+example, while distancing the concept of proposition in Process and Reality from
+“verification in the logical empiricist sense” (406), Stengers brings it closer to the
+pragmatic verification criterion, and writes that “the true verification of a proposition
+concerns its consequences, or the new possibilities that it makes conceivable […] the
+future it makes possible to envisage” (20-21).
+Stengers departs here “from any
+nostalgia for the verification processes designating what physicists or chemists call
+‘objectivity’” (439) and she holds “that the truth, or importance, of an idea is nothing
+other than its process of verification, the creative process in which the eventual
+consequences of these ideas are produced and put to the test” (438).
+
+Stengers
+argues that the God of Process and Reality, like the God of Science and the Modern
+World, has “nothing in common with a God of religion, and particularly with the God
+of the Christians” (220), but solely “answers to a need produced by metaphysics”
+(225). Consequently, she argues for the need for “a severe sorting process between
+religious statements and metaphysical statements, with the former testifying to what
+human consciousness has made itself capable of at a given epoch, and the latter
+accepting themselves as obliged only by the imperative of coherence” (394).
+Stengers’ presentation of Process and Reality’s concept of God as the outcome of a
+purely metaphysical construction so as to deal with the problem of becoming is one of
+the strengths of Thinking with Whitehead.
+
+\section{shaviro}
+@book{shaviro2012without,
+	title={Without Criteria: Kant, Whitehead, Deleuze, and Aesthetics},
+	author={Shaviro, Steven},
+	year={2012},
+	publisher={MIT press}
+}
+No book is ever written in a vacuum; and my intellectual indebtedness
+in the case of Without Criteria is especially great. My book is largely written in
+the margins of Isabelle Stengers’s magnificent Penser avec Whitehead. With this
+text, Stengers both made Whitehead accessible to me for the first time, and
+opened up the question of Whitehead’s affinity with Deleuze
+
+XV
+(such as questions about commodity fetishism, about immanence
+and transcendence, about the role of autopoietic or self-organizing systems,
+and about the ways that “innovation” and “creativity” seem to have
+become so central to the dynamics of postmodern, or post-Fordist, capitalism).
+
+p22
+In Process and Reality, “morphological description is replaced by
+description of dynamic process. Also Spinoza’s ‘modes’ now become the
+sheer actualities; so that, though analysis of them increases our understanding,
+it does not lead us to the discovery of any higher grade of reality” (7).
+For Whitehead, there is nothing besides the modes, no unified substance
+that subsumes them—not even immanently. Even God, Whitehead suggests,
+is natura naturata as well as natura naturans, “at once a creature of creativity
+and a condition for creativity. It shares this double character with all creatures”
+(31). In itself, every individual “actual entity satisfies Spinoza’s notion
+of substance: it is causa sui ” (222). The modes, affections, or actual occasions
+are all there is.6
+
+ch4	
+Both Whitehead and Deleuze place creativity, novelty, innovation, and the
+new at the center of metaphysical speculation. These concepts (or at least these
+words) are so familiar to us today—familiar, perhaps, to the point of nausea—
+that it is difficult to grasp how radical a rupture they mark in the history of
+Western thought. In fact, the valorization of change and novelty, which we so
+take for granted today, is itself a novelty of relatively recent origin. Philosophy
+from Plato to Heidegger is largely oriented toward anamnesis (reminiscence)
+and aletheia (unforgetting), toward origins and foundations, toward the past
+rather than the future. Whitehead breaks with this tradition when he designates
+the “production of novelty” as an “ultimate notion,” or “ultimate metaphysical
+principle” (1929/1978, 21). This means that the new is one of those
+fundamental concepts that “are incapable of analysis in terms of factors more
+far-reaching than themselves” (Whitehead 1938/1968, 1). Deleuze similarly
+insists that the new is a value in itself: “the new, with its power of beginning
+and beginning again, remains forever new.” There is “a difference . . . both formal
+and in kind” between the genuinely new and that which is customary and
+established (Deleuze 1994, 136).
+
+For both Whitehead and Deleuze, novelty is the highest
+criterion for thought; even truth depends on novelty and creativity, rather than
+the reverse. As for creativity itself, it appears “that Whitehead actually coined
+the term—our term, still the preferred currency of exchange among literature,
+science, and the arts . . . a term that quickly became so popular, so omnipresent,
+that its invention within living memory, and by Alfred North Whitehead of
+all people, quickly became occluded” (Meyer 2005, 2–3).
+
+p92
+Of course, contemporary biology is not prone to speak of final causes,
+or to define life in the way that Whitehead does. According to the mainstream
+neo-Darwinian synthesis, “pure physical inheritance,” when combined with
+occasional random mutation and the force of natural selection, is sufficient to
+account for biological variation. On this view, innovation and change are not
+primary processes, but adaptive reactions to environmental pressures. Life is
+essentially conservative: not oriented toward difference and novelty as Whitehead
+would have it, but organized for the purposes of self-preservation and
+self-reproduction. It is not a bid for freedom, but an inescapable compulsion.
+The image of a “life force” that we have today is not anything like Bergson’s
+élan vital; it is rather a virus, a mindlessly, relentlessly self-replicating bit of
+DNA or RNA. Even the alternatives to the neo-Darwinian synthesis that are
+sometimes proposed today—like Maturana and Varela’s theory of autopoiesis
+(1991), Stuart Kauffman’s exploration of complexity and self-organizing systems
+(2000), Lynn Margulis’s work on symbiosis (Margulis and Sagan 2002),
+James Lovelock’s Gaia theory (2000), and Susan Oyama’s developmental systems
+theory (2000)—share mainstream biology’s overriding concern with
+the ways that organisms maintain homeostatic equilibrium in relation to
+their environment and strive to perpetuate themselves through reproduction.
+It would seem that organic beings only innovate when they are absolutely
+compelled to, and as it were in spite of themselves.
+
+The context of this “return” to beauty is an exceedingly disagreeable one. On
+the one hand, beauty today has become a mere adjunct of advertising and
+product design—just as “innovation” has become a managerial buzzword,
+and creativity has become “a value in itself ” for the corporate sector (Thrift
+2005, 133). There’s scarcely a commodity out there that doesn’t proclaim its
+beauty as a selling point, together with its novelty and the degree of creativity
+that ostensibly went into developing it.
+
+After all, Whitehead’s
+great topic is precisely the manner in which something radically new can
+emerge out of the prehension of already existing elements. Innovation is all a
+matter of “ ‘subjective form,’ which is how [a particular] subject prehends [its]
+datum” (1929/1978, 23). Whitehead’s aesthetics, with its intensive focus on
+this how, takes on a special urgency in a culture, such as ours, that is poised on
+the razor’s edge between the corporate ownership, and interminable recycling,
+Chapter 6
+158 159
+of “intellectual property,” on the one hand, and the pirating, reworking, and
+transformation of such alleged “property,” often in violation of copyright laws,
+on the other.
+
+Whitehead warns us that “the chief error in philosophy is overstatement.
+The aim at generalization is sound, but the estimate of success is exaggerated”
+(1929/1978, 7).
+
+\paragraph{Creativity as a key concept..rapp ch 5}
+\cite[ch 5]{rapp1990whitehead}
+Ultimate universal categories: creativity, many, one
+philosophy of organism
+mechanical 
+prehension: PHILOSOPHY
+an interaction of a subject with an event or entity which involves perception but not necessarily cognition.
+factors expressed by: 'actual entity', 'prehension', 'nexus'
+actual entity replaces substance
+
+
+
+
+\paragraph{What is the process philosophical view of reality}
+See Reschner introduction en SEP art \cite{Rescher-2012-sep}
+Seibt SEP entry \cite{Seibt-2013-sep}
+
+
+Process philosophy, or process theology, or simply process thought, is a tradition in philosophy that is in progress. Different scholars contribute different views but there are some commonalities.
+ 
+In the traditional western metaphysics, started with Aristotle and build on ideas of Descartes for dualism and Newton for a mechanical world view, reality is based on a description of entities that have a persistent character. Change is represented as an alteration of the attributes of these persisting entities and is of a secundary ontology. The primairy ontology is the entity that is made out of of ever lasting substance.
+
+I this methaphisics ???
+
+
+This metaphisic is based on a cause and effect principle that.
+
+its substance, The basic principle is persistance, reality as we experience it, is an reality that is already exsiting.
+
+In the methaphysics of process philosophie], change is the basic principle. The reality as we experience it is a reality that is becoming, being is becoming.
+The continuously going on and coming about of reality is explained by the working of processes. The temporally stable and recurrend aspects what the substance philosophy explains by the concept of matter is in process philosophy explained with the regular behavior of a dynamic system that is the result ot the interaction of processes.
+
+Processes can be grouped to macro process. Processe are related to other existing processes (in hoeverre?).
+In the atomistic view of pp the reduction of processes is finit and ends at the categorie of basic processes. It is however also possible to see processes as construction of processes in to infinity, and deny the existance of basic categories of processes.
+
+The acceptance of a basic categorie of processes brings with it a limitation in novelty because agregate processes inheret characteristics of the basic processes. Compare this with the evolution theory where new species depend on the genetic structure of their predecessor.
+???If I accepte the reduction into inifinite view, there is no limitation in what is possible.
+
+creative activity (transforming potentiality into actuality)
+
+Voorbeeld met de begrippen van Whitehead:
+Process
+Actueal-entity
+Creativity
+Concrenesse
+Prehension
+Misschien ook de categorien van zijnden.
+
+
+???With the process as a universal building block process philosophy tries to overcome the object subject dualism.
+
+ and in this way the body is a groupexist of the combination of ther processes
+
+Because everything in pp is expained with processe
+With the explanation of y is explained with processesm
+
+
+
+
+The modern scientific method is 
+in this metaphysics is presented as 
+
+
+has long been based on a description of reallity existing of 
+is based on entities
+Process philosophy is a metaphysical endeavour that  explanation of the phenomena in the world based on the developmental nature of reality where as the dominant, western, explenation of the world is based on a static reality. 
+Process philosophy share the idea that to understand the world and answer the basic philosophical questions it is best to understand the world as an ever changing reality, is not what is, but what is becoming.
+
+There is not one process philosophy view but there are different views.
+In the field of process philosophy Alfred North Whitehead and Charles Hartshorn are seen as the most important contributers to the contempory view of process philosophy. 
+But thes ar by far not the only scholars. Especially in the North America's, process philosophie had and has a large community of philosophers. 
+
+Nichlas Rescher has writen a clear introduction into PP \cite{rescher1996process}.
+
+Process philosophers try to find one principle of explanation for al questions and in this the western  substance philosophy has failed, (Descartes gave us dualism).
+With one and get rid of the object-subject dichotomy. For this they define one basic principle that lies behind all the entities of reality. 
+In the substance philosophy not everything is to explain from the basic unit matter. In science this is neglected.
+Newton mechanica -> quentum physics.
+
+becoming and changing over static being. The dominant western worl view is that of a world consisting of entities that consist of matter that is constructed from small building blocks. The idea is that these blocks exist for ever.
+
+\paragraph{Basic Doctrines}
+
+(http://www.ctr4process.org/about/what-process-thought)
+
+The principle of process philosophy ranges back to the Greek Heraclitus of Ephesus (born ca. 560 B.C.E.) who is commonly recognized as the founder of the process approach \cite{Seibt-2013-sep}. 
+but there are two contemporary philosophers that are most associated with the term process philosophy namely Alfred North Whitehead (1861-1947) and Charles Hartshorne (1897-2000).
+Next to these are scholars like
+
+
+
+
+
+\paragraph{How does process philosophy help to understand creativity?}
+
+
+\paragragph(What is creativity)
+beschrijving?
+Algemene omschrijving PP
+Wat is een process
+Wat is creativiteit
+
+
+\section{Content}
+\section{Conclusion}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{The concept of creativity}
+
+
+
+-Laat de verschillende concepten in filosofie zien.
+-Laat de verschillende verklaringen, uitleg over de werking in de psychology zien.
+-Leg uit wat het begrip creativiteit betekend in de PP en schets een mogelijke werking. Gebruik daarvoor de verschillende PP auteurs, zie boek rescher.
+
+\section{Provisional section head}
+
+\section{Conclusion}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{The concept of IT-software}
+Wat bedoel ik met it-technology:
+
+- programming environments for making new programs
+- tools that support engineering
+- tools that support ideation specified to technology ideationsubsection{}
+- visualisation, prototyping
+- build a model of PP that creates new processes in de creatie way?
+
+\section{Provisional section head}
+\section{Conclusion}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{What is the role of Process Philosophy(What is the relation between PP and creativity)}
+
+In deze sectie: Wat is de relatie tussen PP en creativiteit/TI.
+
+\section{Provisional section head}
+\section{Conclusion}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{How do I think Process Philosophy and IT are related (what is the relation PP and IT)}
+\section{Provisional section}
+
+
+
+IT lijkt in zekere zin op het process model. Als we de hardware buiten beschouwing laten dan bestaat IT vooral uit processen die onderling met elkaar in relatie staan. De structuur bestaat uit de code regels.
+
+Is het denkbaar dat processen spontaan ontstaan? Zou het mogelijk zijn om de pp te simuleren?
+Nu waarschijlijk nog niet.
+De wereld zonder it veranderd steeds als gevolg van nieuwe processen.
+\todo{rdb de wereld met it dus niet?} Als ik de geschiedenis bekijk dan hebben mensen, ook een process neem ik aan, een grote impact op de ontwikkeling doordat zij, meer dan dieren bv, gericht ontwikkelen, dus processen creeren. Een process creer gericht andere processen.
+Dat doet een process (verzameling van processen) zoals de mens in zijn eigen belang. Dus en process zal in het belang van zijn eiegen process een bepaalde invloed proberen uit te oefenen op het creeren van andere processen. Als de mens, of een dier of een soort, wegvalt dan is de kans dat nieuwe processen ontstaan die hem/haar/het gebaat zouden hebben op zijn minst afgenomen.
+
+
+\section{Conclusion}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{How does IT influence creativity explained with a PP view}
+
+
+Elk niew process bied nieuwe mogelijkheden zo ook IT. Door It zijn nieuwe processen op te bouwen die relaties met het IT-process hebben? Maar wat is zo bijzonder aan IT?
+
+Misschien, als ik geen goed link kan vinden, draai ik de zaak om en probeer een voorstel te doen voor een simulatie van PP, het genereren, verbinden, draaien en afsterven van processen middels software
+
+\section{Provisional section}
+
+\section{Conclusion}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\chapter{Conclusion}
+
+\begin{verbatim}
+IT-> easier/faster access to existing ideas and concepts (patents and copy rights are obstructions)
+IT-> virtual world, free building tools (Java), low machine investment (PC, internet access) -> 
+high user participation, small companies, building for fun, free non commercial usage (Hippel)
+IT-. High interaction grade (smartphone, youtube, facebook, twitter) -> fast dispersion of ideas
+IT-> no contemplation, overwelming information supply changing fast
+IT-> new, people have to learn how to use it?
+IT-> process philosophy -> every thng is connected via internet WIFI etc, concept of rocess comes close to the workings of a IT program. Relations can be process automatically-> big data?
+IT-> process philosophy -> would it be possible to build, immitated, reality in IT processes? and predict the outcome? In fact this is what we do with the weather system for example. Is not IT a model cennecting to PP? Data = matter, process and relations.
+Only the program does not change itself-> processes and relations are fixed. People build new programs (Processes) make relations and store data. It is possible to model this with physical things but much harder to make connections. Software is very easy to change compared to hardware, unless changes have go deep in protocols that could influence existing programs.
+
+IT-> Ideation support systems, visualizing concepts, idea generation
+
+IT-> maybe discuss if computers can be creative? Or skip because not part of the research?
+
+It-> Could be seen as replacing the brain wherease machines replace the body? Is that dualism?
+\end{verbatim}
+
+\section{Provisional section}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\bigskip
+%------------------------------------------------------------------------------
+\todo{Denk er aan dat automatische referenties van bv scholar niet altijd volledig zijn en ook van het verkeerde type kunnen zijn bv aticle ipv book}
+\bibliography{psts-master-thesis}
+\bibliographystyle{apacite}
+%------------------------------------------------------------------------------
+\end{document}
+
